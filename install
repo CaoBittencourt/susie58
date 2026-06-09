@@ -1,0 +1,5 @@
+#!/bin/bash
+cd $(realpath $(dirname "${BASH_SOURCE}"))
+
+cd config
+wget https://github.com/joelspadin/zmk-locale-generator/releases/download/v1.5.0/keys_pt_abnt2.h
