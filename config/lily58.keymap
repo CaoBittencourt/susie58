@@ -46,5 +46,15 @@
                           &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
         };
+
+        toAssign {
+            bindings = <
+&kp BSLH  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME          &kp END          &kp ENTER                           &kp BACKSPACE  &kp DEL    &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp PIPE  &kp SEMICOLON  &kp COLON    &kp SINGLE_QUOTE  &kp K_VOLUME_UP  &kp PT_C_CEDILLA                    &kp PT_TILDE   &kp QMARK  &trans                 &trans                &trans            &trans
+&kp A     &kp S          &kp S        &kp I             &kp G            &kp N                               &kp Y          &kp M      &kp B                  &kp O                 &kp L             &kp S
+&trans    &trans         &trans       &trans            &trans           &trans            &trans    &kp S   &kp COMMA      &kp M      &kp A                  &kp T                 &kp H             &kp COMMA
+                                      &trans            &trans           &trans            &trans    &trans  &kp E          &kp T      &kp C
+            >;
+        };
     };
 };
