@@ -22,7 +22,7 @@
 &kp ESC   &dsds  &kp PT_N2  &kp HASH  &kp DOLLAR    &kp PERCENT                          &kp PT_UMLAUT  &kp AMPERSAND  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
 &kp PT_A  &kp Q  &kp W      &kp E     &kp R         &kp T                                &kp Y          &kp U          &kp I         &kp O         &kp P         &trans
 &kp TAB   &kp A  &kp S      &kp D     &kp F         &kp G                                &kp H          &kp J          &kp K         &kp L         &trans        &trans
-&kp ESC   &kp Z  &kp X      &kp C     &kp V         &kp B        &mo 3        &trans     &kp N          &kp M          &kp COMMA     &kp DOT       &trans        &trans
+&kp ESC   &kp Z  &kp X      &kp C     &kp V         &kp B        &mo 3        &kp ENTER  &kp N          &kp M          &kp COMMA     &kp DOT       &trans        &trans
                             &mo 4     &kp LEFT_GUI  &kp LCTRL    &kp SPACE    &kp RSHFT  &mo 1          &kp BACKSPACE  &kp RALT
             >;
         };
