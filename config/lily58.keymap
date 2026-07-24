@@ -85,12 +85,13 @@
         };
     };
     */
+
     keymap {
         compatible = "zmk,keymap";
 
         susie {
             bindings = <
-&kp ESC     &kp PT_N1  &kp PT_N2  &kp PT_N3  &kp PT_N4  &kp PT_N5                                               &kp PT_N6  &kp PT_N7      &kp PT_N8  &kp PT_N9  &kp PT_N0         &kp PT_DOUBLE_QUOTES
+&kp ESC     &kp PT_N1  &kp PT_N2  &kp PT_N3  &kp PT_N4  &kp PT_N5                                               &kp PT_N6  &kp PT_N7      &kp PT_N8  &kp PT_N9  &kp PT_N0         &kp PT_SINGLE_QUOTE
 &kp TAB     &kp Q      &kp W      &kp E      &kp R      &kp T                                                   &kp Y      &kp U          &kp I      &kp O      &kp P             &kp PT_BACKSLASH
 &kp LCTRL   &kp A      &kp S      &kp D      &kp F      &kp G                                                   &kp H      &kp J          &kp K      &kp L      &kp PT_C_CEDILLA  &kp PT_TILDE
 &kp LSHIFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp PT_LEFT_BRACKET    &kp PT_RIGHT_BRACKET  &kp N      &kp M          &kp COMMA  &kp DOT    &kp PT_COLON      &kp RSHFT
@@ -127,7 +128,8 @@
                         &trans  &trans  &trans  &trans    &trans  &trans             &kp DEL  &trans
             >;
         };
-/*
+
+        /*
         toAssign {
             bindings = <
 &kp BSLH  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME          &kp END          &kp ENTER                           &kp BACKSPACE  &kp DEL    &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
