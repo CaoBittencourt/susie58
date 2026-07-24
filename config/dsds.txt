@@ -1,4 +1,4 @@
-ttt;;;;;;ć|||||\\\\
+ffttt;;;;;;ć|||||\\\\
 sçççqqqqqqqq
 ççççç¨¨äÄ
 aaaaaaaaaaAAAAAAAAAAæÆÆÆÆÆÆṽk
@@ -8,4 +8,15 @@ aaaaaaaaaaAAAAAAAAAAæÆÆÆÆÆÆṽk
 Noso Seỹohr Žezús Cristu
 Nosa Seỹora da Lus dus Pĩays
 
-!2@##cd 
+!2@##cd
+
+behaviors {
+    dsds: dsds {
+        compatible = "zmk,behavior-mod-morph";
+        label = "DSDS";
+        bindings = <&kp LS(PT_N1)>, <&kp PT_N1>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_RSFT|MOD_LSFT)>;
+    };
+};
