@@ -3,17 +3,85 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-        behaviors {
-        inverted1: inverted1 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_EXCL>, <&kp PT_N1>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted2: inverted2 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_AT>, <&kp PT_N2>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted3: inverted3 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_HASH>, <&kp PT_N3>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted4: inverted4 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_DLLR>, <&kp PT_N4>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted5: inverted5 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_PRCNT>, <&kp PT_N5>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted6: inverted6 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_TREMA>, <&kp PT_N6>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // Handles the ABNT2 trema (¨)
-        inverted7: inverted7 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_AMPS>, <&kp PT_N7>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted8: inverted8 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_ASTRK>, <&kp PT_N8>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted9: inverted9 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_LPAR>, <&kp PT_N9>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        inverted0: inverted0 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp PT_RPAR>, <&kp PT_N0>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+    behaviors {
+        inverted1: inverted1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_EXCL>, <&kp PT_N1>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted2: inverted2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_AT>, <&kp PT_N2>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted3: inverted3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_HASH>, <&kp PT_N3>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted4: inverted4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_DLLR>, <&kp PT_N4>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted5: inverted5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_PRCNT>, <&kp PT_N5>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted6: inverted6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_TREMA>, <&kp PT_N6>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }; // Handles the ABNT2 trema (¨)
+        inverted7: inverted7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_AMPS>, <&kp PT_N7>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted8: inverted8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_ASTRK>, <&kp PT_N8>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted9: inverted9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_LPAR>, <&kp PT_N9>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverted0: inverted0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PT_RPAR>, <&kp PT_N0>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -21,11 +89,11 @@
 
         susie {
             bindings = <
-&kp ESC   &dsds  &kp PT_N2  &kp HASH  &kp DOLLAR  &kp PERCENT                          &kp PT_UMLAUT  &kp AMPERSAND  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
-&kp TAB   &kp Q  &kp W      &kp E     &kp R       &kp T                                &kp Y          &kp U          &kp I         &kp O         &kp P          &trans
-&kp LGUI  &kp A  &kp S      &kp D     &kp F       &kp G                                &kp H          &kp J          &kp K         &kp L         &kp LS(PT_N1)  &trans
-&kp ESC   &kp Z  &kp X      &kp C     &kp V       &kp B        &mo 3        &kp ENTER  &kp N          &kp M          &kp COMMA     &kp DOT       &trans         &trans
-                            &mo 4     &mo 1       &kp LCTRL    &kp SPACE    &kp RSHFT  &mo 1          &kp BACKSPACE  &kp RALT
+&kp ESC   &inverted1  &inverted2  &inverted3  &inverted4  &inverted5                          &inverted6  &inverted7     &inverted8  &inverted9  &inverted0        &trans
+&kp TAB   &kp Q       &kp W       &kp E       &kp R       &kp T                               &kp Y       &kp U          &kp I       &kp O       &kp P             &trans
+&kp LGUI  &kp A       &kp S       &kp D       &kp F       &kp G                               &kp H       &kp J          &kp K       &kp L       &kp PT_C_CEDILLA  &trans
+&kp ESC   &kp Z       &kp X       &kp C       &kp V       &kp B       &mo 3        &kp ENTER  &kp N       &kp M          &kp COMMA   &kp DOT     &trans            &trans
+                                  &mo 4       &mo 1       &kp LCTRL   &kp SPACE    &kp RSHFT  &mo 1       &kp BACKSPACE  &kp RALT
             >;
         };
 
